@@ -12,6 +12,5 @@ let num1 = 5;
 let num2 = 10; 
 let num3 = 15;
 let num4 = 20;
-console.log(num1);
 console.log((num1 > num2) && (num3 < num4));
 console.log((num1 > num2) || (num3 < num4));
