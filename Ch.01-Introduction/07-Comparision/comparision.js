@@ -24,6 +24,3 @@ console.log(a <= b);
 
 // Not equal: check both values and type of values.
 console.log(a !== b);
-
-// Smaller than: check both values and type of values.
-console.log(a !== b);
