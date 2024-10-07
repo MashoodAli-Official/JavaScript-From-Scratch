@@ -37,3 +37,5 @@ Chapter 2 provides a thorough explanation of JavaScript objects, using clear and
 02. 02-BooleanObject
 03. 03-StringObject
 04. 04-DateObject
+05. Regular Expression
+06. Arrays
