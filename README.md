@@ -47,4 +47,5 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>09-Classes</li>
 <li>10-ClassVariable</li>
 <li>11-ClassFunction</li>
+<li>12-StaticFunction</li>
 </ul>
