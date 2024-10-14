@@ -1,7 +1,18 @@
 "use Restrict";
-class MyProgram {
-    static getProgramName() {
-        console.log("Computer Science");
-    }
+class cat {
+    constructor (name){
+        this.name = name;
+    };
+
+    introduce(){
+        console.log('This is ' + this.name);
+    };
+
+    // static method
+    static voice (){
+        console.log(' Meow');
+    };
 }
-MyProgram.getProgramName();
+const myCat = new cat('Tom');
+myCat.introduce();
+cat.voice();
