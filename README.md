@@ -49,4 +49,5 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>11-ClassFunction</li>
 <li>12-StaticFunction</li>
 <li>13-InstanceOf Operator</li>
+<li>14-Class Inheritance</li>
 </ul>
