@@ -1,20 +1,19 @@
-class Animal {
+class housePet {
     speak() {
-      console.log("The animal makes a sound.");
+      console.log("The house pet makes a sound.");
     }
   }
   
-  class Dog extends Animal {
+  class Cat extends housePet {
     speak() {
       // Call the parent class's method
       super.speak();
-      console.log("The dog barks.");
+      console.log("The Cat Meows.");
     }
   }
   
-  let myDog = new Dog();
-  myDog.speak();
+  let myCat = new Cat();
+  myCat.speak();
   // Output:
-  // The animal makes a sound.
-  // The dog barks.
-  
+  // The house pet makes a sound.
+  // The Cat barks.
