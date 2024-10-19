@@ -48,7 +48,7 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>10-ClassVariable</li>
 <li>11-ClassFunction</li>
 <li>12-StaticFunction</li>
-<li>13-InstanceOf Operator</li>
+<li>13-InstanceOf Operators</li>
 <li>14-Class Inheritance</li>
 <li>15-Method Overriding</li>
 <li>16-SuperKeyword</li>
@@ -57,4 +57,5 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 ## ch.03-Advanced JavaScript
 <ul>
 <li>01-Exception/Error Handling</li>
+<li>02-Validation</li>
 </ul>
