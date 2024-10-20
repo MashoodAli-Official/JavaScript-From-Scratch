@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			var GreenBox = null;
+			var movementAmount = 0;
+		</script>
+		<style>
+			#GreenBox
+			{
+				background-color: rgb(10, 222, 31);
+				width: 100px;
+				height: 100px;
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="GreenBox"></div>
+
+		<script type="text/javascript">
+			GreenBox = document.getElementById("GreenBox");
+			var animation;
+			function EpicMovement()
+			{
+				movementAmount += 1;
+				GreenBox.style.left = movementAmount + 'px';
+				console.log(GreenBox.style.left);
+				animation = setTimeout(EpicMovement, 1);
+			}
+			EpicMovement();
+		</script>
+		<noscript>JS not supported</noscript>
+	</body>
+</html>
