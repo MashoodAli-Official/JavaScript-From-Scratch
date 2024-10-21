@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio File Control</title>
+</head>
+<body>
+    <h1>Basic audio File Control in Javascript</h1>
+    <audio id="sampleAudio" src="files/SampleAudioFile.mp3"></audio>
+    <button id="playBtn" style="padding: 10px; font-size: large; background-color: chartreuse;">Play</button>
+
+    <script>
+        const audioPlayer = document.getElementById("sampleAudio");
+        const playPauseBtn = document.getElementById("playBtn");
+    
+        playPauseBtn.addEventListener("click", () => {
+            if(audioPlayer.paused){
+                audioPlayer.play();
+                playPauseBtn.innerHTML = "Pause ⏸️";
+            } else{
+                audioPlayer.pause();
+                playPauseBtn.innerHTML = "Play ▶️";
+            }
+        });
+    </script>
+
+    <ul>
+        <li>The controls attribute automatically adds play, pause, and volume controls to the audio element.</li>
+        <li>The tag includes a source element for the audio file (sample-audio.mp3). You can replace this with your own file.</li>
+    </ul>
+</body>
+</html>

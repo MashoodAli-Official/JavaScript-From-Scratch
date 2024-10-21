@@ -58,4 +58,6 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <ul>
 <li>01-Exception/Error Handling</li>
 <li>02-Validation</li>
+<li>03-Animation</li>
+<li>04-Multimedia control</li>
 </ul>

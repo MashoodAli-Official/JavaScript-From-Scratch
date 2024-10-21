@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Video Control</title>
+</head>
+<body>
+    <h1>Simple Video Control in JavaScript</h1>
+
+    <video id="sampleVideo" src="files/SampleVideo.mp4" controls style="height: 200px;"></video>
+    <br> 
+    <button id="playBtn" style="padding: 10px; font-size: large; background-color: chartreuse;">Play</button>
+    <script>
+        const videoPlayer = document.getElementById("sampleVideo");
+        const playPauseBtn = document.getElementById("playBtn");
+
+        playPauseBtn.addEventListener("click", () => {
+            if (videoPlayer.paused) {
+                videoPlayer.play();
+                playPauseBtn.textContent = "Pause ⏸️";
+            } else {
+                videoPlayer.pause();
+                playPauseBtn.textContent = "Play ▶️";
+            }
+        });
+    </script>
+</body>
+</html>

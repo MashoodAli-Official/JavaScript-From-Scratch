@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Color Animation</title>
+
+    <style>
+        #animatedText {
+            font-size: 70px;
+            text-align: center;
+            margin-top: auto;
+            color: black;
+        };
+    </style>
+</head>
+<body>
+    <h1>Simple Text Animation in Javascript</h1>
+
+    <div id="animatedText">Hello Universe 🌌</div>
+    <script>
+        let color = ["red", "green", "blue", "yellow", "purple", "orange"];
+        let currentColor = 0;
+        
+        function changeColor(){document.getElementById("animatedText").style.color = color[currentColor];
+        currentColor = (currentColor + 1) % color.length;
+        }
+        setInterval (changeColor, 1000);
+    </script>
+
+    <h3>Code Explanation</h2>
+    <ul>
+        <li>The text "Hello Universe 🌌" is in the #animatedText div.</li>
+        <li>The setInterval() function changes the text color every second, cycling through the colors in the colors array.</li>
+        <li>The color change happens by updating the style.color property of the text element in the changeColor() function.</li>
+    </ul>
+</body>
+</html>
