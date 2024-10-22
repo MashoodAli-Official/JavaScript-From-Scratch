@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changer Background Color</title>
+
+    <style>
+        #bgContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="bgContainer">
+        <h1>Changer Background Color</h1>
+        <button 
+            id="changeColorBtn" 
+            style="height: 50px; 
+            padding-left: 20px; 
+            padding-right: 20px; 
+            border-radius: 20px; 
+            background-color: #1b08b1;
+            color: white;
+            ">
+        Change Background Color
+        </button>
+    </div>
+
+    <script>
+        let colors = ["red", "green", "blue", "yellow", "purple", "orange"];
+        let currentColor = 0;
+        let changeColorBtn = document.getElementById("changeColorBtn");
+        changeColorBtn.addEventListener("click", () => {
+            document.body.style.backgroundColor = colors[currentColor];
+            currentColor = (currentColor + 1) % colors.length;
+        })
+    </script>
+</body>
+</html>

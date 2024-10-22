@@ -61,3 +61,8 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>03-Animation</li>
 <li>04-Multimedia control</li>
 </ul>
+
+## Simple-Projects
+<ul>
+<li>01-BackgroundColorChange</li>
+</ul>
