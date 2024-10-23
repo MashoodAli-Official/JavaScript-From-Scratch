@@ -60,6 +60,8 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>02-Validation</li>
 <li>03-Animation</li>
 <li>04-Multimedia control</li>
+<li>05-Modules</li>
+<li>06-Maps</li>
 </ul>
 
 ## Simple-Projects
