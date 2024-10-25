@@ -9,7 +9,7 @@ let superHeros = new Map(
         ['Thor', 'God Of Thunder'],
     ]
 );
-console.log(superHeros); //Map(4) {'Tony Stark' => 'Iron Man', 'Steve Rogers' => 'Captain America', 'Dr. Bruce Banner' => 'Hulk', 'Thor' => 'God Of Thunder'}
+console.log('New Map: ',superHeros); //Map(4) {'Tony Stark' => 'Iron Man', 'Steve Rogers' => 'Captain America', 'Dr. Bruce Banner' => 'Hulk', 'Thor' => 'God Of Thunder'}
 
 // get() method
 console.log(superHeros.get('Tony Stark')); //Iron Man
@@ -31,7 +31,7 @@ let planets = new Map([
 ]);
 console.log(planets); //Map(4) {'Mercury' => 1, 'Venus' => 2, 'Earth' => 3, 'Mars' => 4}
 planets.delete('Mars');
-console.log(planets); //Map(3) {'Mercury' => 1, 'Venus' => 2, 'Earth' => 3}
+console.log('deleting specific key: ',planets); //Map(3) {'Mercury' => 1, 'Venus' => 2, 'Earth' => 3}
 
 //clear() method
 let bikes = new Map();
@@ -40,4 +40,13 @@ bikes.set('Yamaha', 'R15');
 bikes.set('Suzuki', 'Gixxer');
 console.log(bikes); //Map(3) {'Honda' => 'CBR600RR', 'Yamaha' => 'R15', 'Suzuki' => 'Gixxer'}
 bikes.clear();
-console.log(bikes);
+console.log('key-values clear from Map',bikes);
+
+//has() method
+let cars = new Map([
+    ['Toyota', 'Camry'],
+    ['Honda', 'Civic'],
+    ['Ford', 'Mustang'],
+]);
+console.log(cars.has('Ford')); //true
+console.log(cars.has('Land Rover')); //false

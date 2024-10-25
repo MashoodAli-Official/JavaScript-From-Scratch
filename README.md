@@ -63,6 +63,7 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>05-Modules</li>
 <li>06-Maps</li>
 <li>07-Maps Methods</li>
+<li>08-Hoisting</li>
 </ul>
 
 ## Simple-Projects
