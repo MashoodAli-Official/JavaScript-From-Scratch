@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="arrowFunction.js"></script>
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h1>Arrow Function in JavaScript</h1>
+    <p>Arrow functions are a new feature in ES6. Arrow functions are anonymous functions. 
+        Arrow function allow us to write shorter functions in JavaScript 
+        and avoid the use of the 'function' keyword.
+    </p>
+    <h4>Arrow Function Example 👇</h4>
+    <p id="SupeHero" style="color: blue; font-size: 20px"></p>
+    <script>
+        let mySuperHero;
+        mySuperHero = () =>{
+            return "Iron Man is my Favorite Super Hero";
+        }
+        document.getElementById("SupeHero").innerHTML = mySuperHero();
+    </script>
+</body>
+</html>
