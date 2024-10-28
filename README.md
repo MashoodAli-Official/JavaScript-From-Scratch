@@ -63,10 +63,18 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>05-Modules</li>
 <li>06-Maps</li>
 <li>07-Maps Methods</li>
-<li>08-Hoisting</li>
+<li>08-Scope</li>
+<li>09-Hoisting</li>
+<li>10-ArrowFunction</li>
+</ul>
+
+## ch.04-Async
+<ul>
+<li>01-CallBack Function</li>
 </ul>
 
 ## Simple-Projects
 <ul>
 <li>01-BackgroundColorChange</li>
+<li>02-Clock<li>
 </ul>
