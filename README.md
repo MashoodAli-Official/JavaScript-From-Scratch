@@ -71,10 +71,12 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 ## ch.04-Async
 <ul>
 <li>01-CallBack Function</li>
+<li>02-Asynchronous Function</li>
 </ul>
 
 ## Simple-Projects
 <ul>
 <li>01-BackgroundColorChange</li>
 <li>02-Clock<li>
+<li>03-Counter</li>
 </ul>

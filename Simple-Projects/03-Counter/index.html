@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        #Container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #ComponentContainer {
+            display: flex;
+            padding: 10px 50px;
+            border-radius: 15px;
+            align-items: center;
+            background-color: #396afc;
+        }
+        #IncrementBtn, #DecrementBtn {
+            height: 40px;
+            width: 40px;
+            margin: 10px;
+            font-weight: 800;
+            font-size: 20px;
+            border-radius: 6px;
+        }
+        #counter {
+            padding: 10px;
+            font-weight: 800;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="Container">
+        <h1>Simple Counter in JavaScript</h1>
+        <div id="ComponentContainer">
+            <button id="DecrementBtn">-</button>
+            <h4 id="counter">0</h4>
+            <button id="IncrementBtn">+</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
