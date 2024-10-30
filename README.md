@@ -77,7 +77,8 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 
 ## Simple-Projects
 <ul>
-<li>01-BackgroundColorChange</li>
+<li>01-Background Color Change</li>
 <li>02-Clock<li>
 <li>03-Counter</li>
+<li>04-Letter Counter</li>
 </ul>
