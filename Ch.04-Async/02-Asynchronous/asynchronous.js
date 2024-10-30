@@ -3,7 +3,7 @@
 // Function to fetch the data from the server
 function fetchData(){
     // Return a promise
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         // Simulate a delay of 2 seconds
         setTimeout(() =>{
             // Resolve the promise with the data
