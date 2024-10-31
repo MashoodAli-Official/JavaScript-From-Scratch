@@ -73,6 +73,7 @@ Chapter 2 provides a thorough explanation of JavaScript objects, classes using c
 <li>01-CallBack Function</li>
 <li>02-Asynchronous Function</li>
 <li>03-Promise (Promise Object)</li>
+<li>04-Async Await</li>
 </ul>
 
 ## Simple-Projects
