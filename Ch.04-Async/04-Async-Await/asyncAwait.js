@@ -23,3 +23,17 @@ async function greetingMessage() {
 
 // Calling the async function to display the greeting message
 greetingMessage();
+
+
+async function example() {
+    console.log('Starting...');
+    const result = await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('Hello, World!');
+      }, 2000);
+    });
+    console.log(result);
+    console.log('Finished!');
+  }
+  
+  example();
