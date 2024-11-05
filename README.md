@@ -68,6 +68,8 @@ This chapter dives into advanced JavaScript concepts and techniques essential fo
 <li>09-Hoisting</li>
 <li>10-ArrowFunction</li>
 <li>11-URI</li>
+<li>12-Template Literals</li>
+<li>13-Set Collection</li>
 </ul>
 
 ## ch.04-Async
@@ -88,6 +90,7 @@ This chapter explores the concept of hoisting in JavaScript, a behavior that aff
 </ul>
 
 ## ch.06-Functions
+In this chapter, you'll learn about different types of functions and how they enhance programming flexibility and efficiency. Discover the basics of simple functions, the use of anonymous and arrow functions for more concise code, and the Function Constructor for dynamic function creation. Each type offers unique advantages for structuring your code effectively.
 <ul>
 <li>01-Simple Function</li>
 <li>02-Anonymous Function</li>
