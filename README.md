@@ -70,6 +70,7 @@ This chapter dives into advanced JavaScript concepts and techniques essential fo
 <li>11-URI</li>
 <li>12-Template Literals</li>
 <li>13-Set Collection</li>
+<li>14-AJAX in Javascript</li>
 </ul>
 
 ## ch.04-Async
