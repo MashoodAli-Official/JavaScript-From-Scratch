@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignment</title>
+</head>
+<body>
+    <h1>Destructuring Assignment in Javascript</h1>
+    <p>Destructuring assignment in javascript is a feature that allows you 
+        to assign values to multiple variables from an array or object.
+    </p>
+    <h3>Example</h3>
+    <h5 id="demo"></h5>
+    <script type="text/javascript">
+        'use strict';
+            //Object destructuring
+            const superHeroes = {
+                heroName : "Iron Man",
+                actorName : "Robert Downey Jr.",
+                actorAge : 50,
+            };
+            const { heroName, actorName } = superHeroes; // This is destructuring to extract two properties from the superHeroes object
+            document.getElementById("demo").innerHTML = heroName + " is played by " + actorName;
+            console.log(superHeroes);
+    </script>
+    <i style="color: red;">Please open the console to see the example</i>
+</body>
+</html>
