@@ -99,6 +99,12 @@ In this chapter, you'll learn about different types of functions and how they en
 <li>04-Function Constructor</li>
 </ul>
 
+## Ch. 07-OOP (Object-Oriented-Programming)
+<ul>
+<li>01-Simple-OOP-Intro</li>
+<li>02-ClassesAndObjects</li>
+</ul>
+
 ## Simple-Projects
 <ul>
 <li>01-Background Color Change</li>
