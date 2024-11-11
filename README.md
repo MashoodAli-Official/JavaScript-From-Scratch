@@ -1,6 +1,41 @@
 # JavaScript-From-Scratch
 In this GitHub repository, you can learn or revise JavaScript from scratch with simple examples. The JavaScript concepts are divided into proper chapters and sub-chapters for easy navigation.
 
+## Download and Clone the Repository 📥
+You can download or clone this repository to start working with it. Here are two methods you can use:
+
+1. Using GitHub CLI 🚀
+If you have the GitHub CLI installed, you can clone this repository using the following command:
+```
+gh repo clone MashoodAli-Official/JavaScript-From-Scratch
+```
+2. Using HTTPS 🔗
+If you prefer using HTTPS, use this command:
+```
+git clone https://github.com/MashoodAli-Official/JavaScript-From-Scratch.git
+```
+3. After cloning the repository, navigate to the project directory:
+```
+cd JavaScript-From-Scratch
+```
+
+## Making Changes to the Repository 🛠️
+1. Create a new branch to make your changes. This helps keep your changes organized and makes it easier to manage contributions:
+```
+git checkout -b your-branch-name
+```
+2. Make the changes you want to the files in the repository.
+3. Add and commit your changes:
+```
+git add .
+git commit -m "Description of your changes"
+```
+4. Push the changes to your branch on GitHub:
+```
+git push origin your-branch-name
+```
+Once your changes are pushed, open a Pull Request on GitHub to merge your changes into the main branch. The repository maintainers will review your PR and merge it if everything looks good.
+
 ## Ch.01-Introduction
 In the first chapter of this repository, you will learn the basics of JavaScript with complete basic concepts and code examples. For better understanding, it is recommended to review the code and check the console in the browser.
 
@@ -103,6 +138,7 @@ In this chapter, you'll learn about different types of functions and how they en
 <ul>
 <li>01-Simple-OOP-Intro</li>
 <li>02-ClassesAndObjects</li>
+<li>03-Abstraction</li>
 </ul>
 
 ## Simple-Projects
