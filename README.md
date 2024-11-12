@@ -138,7 +138,10 @@ In this chapter, you'll learn about different types of functions and how they en
 <ul>
 <li>01-Simple-OOP-Intro</li>
 <li>02-ClassesAndObjects</li>
-<li>03-Abstraction</li>
+<li>03-Encapsulation</li>
+<li>04-Abstraction</li>
+<li>05-Inheritance</li>
+<li>06-Polymorphism</li>
 </ul>
 
 ## Simple-Projects
