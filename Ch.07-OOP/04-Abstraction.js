@@ -1,26 +1,18 @@
-// Abstraction is JavaScript 
-// Simplifying complex functionality by hiding unnecessary details, exposing only what’s essential.
+// Abstraction in Javascript
+// How one class can inherit properties and methods from another, allowing code reuse and hierarchical relationships.
 
-// Parent class representing a generic superhero
-class superHero {
-    // Constructor initializes superhero with a name
-    constructor (name){
-        this.name = name;
+// Define a class called mobilePhone
+class mobilePhone {
+    // Constructor method to initialize the mobile phone
+    mobileStart(){
+        console.log("Mobile is starting");
     };
-
-    // Base method for hero's iconic dialogue
-    iconicDialogue(){
-        console.log(`I am ${this.name}`)
+    // user method represents the user's interaction with the mobile phone
+    // This method calls the mobileStart method and logs a message to the console
+    user (){
+        this.mobileStart(); // Call the mobileStart method to simulate the mobile phone starting
+        console.log("User is using mobile");
     };
-};
-
-// Child class inheriting from superHero class
-class hero extends superHero{
-    // Override parent's iconicDialogue method with Iron Man specific dialogue
-    iconicDialogue(){
-        console.log(`I am ${this.name} and I am Iron Man`)
-    }
-};
-
-const myHero = new hero ("Tony Start");// Create new instance of hero class
-myHero.iconicDialogue(); // Call the overridden iconicDialogue method
+}
+const mobile = new mobilePhone(); // Create a new instance of the mobilePhone class
+mobile.user(); // Call the user method on the mobile instance to simulate user interaction
