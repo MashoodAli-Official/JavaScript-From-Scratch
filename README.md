@@ -144,6 +144,12 @@ In this chapter, you'll learn about different types of functions and how they en
 <li>06-Polymorphism</li>
 </ul>
 
+## Ch. 08-Memory Management
+<ul>
+<li>01- Simple intro of memory management</li>
+<li>02- Stack and heap</li>
+</ul>
+
 ## Simple-Projects
 <ul>
 <li>01-Background Color Change</li>
