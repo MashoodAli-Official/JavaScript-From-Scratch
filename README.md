@@ -148,6 +148,7 @@ In this chapter, you'll learn about different types of functions and how they en
 <ul>
 <li>01- Simple intro of memory management</li>
 <li>02- Stack and heap</li>
+<li>03-Pure Function</li>
 </ul>
 
 ## Simple-Projects
