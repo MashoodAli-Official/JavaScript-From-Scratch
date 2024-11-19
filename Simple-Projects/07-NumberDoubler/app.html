@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Doubler</title>
+</head>
+<body>
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <button onclick="doubleNumber()">Double It</button>
+  <p id="result"></p>
+  <script>
+    function doubleNumber() {
+      const input = document.getElementById("numberInput").value;
+      const result = input * 2;
+      document.getElementById("result").textContent = "Result: " + result;
+    }
+  </script>
+</body>
+</html>
