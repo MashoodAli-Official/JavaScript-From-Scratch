@@ -137,19 +137,42 @@ In this chapter, you'll learn about different types of functions and how they en
 ## Ch. 07-OOP (Object-Oriented-Programming)
 <ul>
 <li>01-Simple-OOP-Intro</li>
+OOP is a way of programming using objects to organize data and behavior.
 <li>02-ClassesAndObjects</li>
+Class: A blueprint for creating objects.
+Object: A specific item created from a class.
 <li>03-Encapsulation</li>
+Hiding details and protecting data inside an object.
 <li>04-Abstraction</li>
+Showing only important features, hiding unnecessary details.
 <li>05-Inheritance</li>
+A way for one class to reuse and extend another class.
 <li>06-Polymorphism</li>
+The ability to use the same action in different ways for different objects.
 </ul>
 
 ## Ch. 08-Memory Management
 <ul>
 <li>01- Simple intro of memory management</li>
+Managing how a program uses memory to store and free data efficiently.
 <li>02- Stack and heap</li>
+Stack: Fast, for short-term data (e.g., function calls).
+Heap: Slower, for long-term data (e.g., objects).
 <li>03-Pure Function</li>
+A function that doesn’t change external data and gives the same result for the same input.
 </ul>
+
+## Ch.09-High Order Function
+<ul>
+<li>01-High Order Function</li>
+A function that either takes other functions as arguments, returns a function, or both.
+<li>02-Pure Function</li>
+A function that always returns the same output for the same input and has no side effects (does not change anything outside its scope).
+</ul>
+
+# Ch.10-Immutability
+Immutability in JavaScript means an object's state cannot be changed after it's created. Instead of modifying the original, a new object or value is created when updates are needed.
+
 
 ## Simple-Projects
 <ul>
@@ -157,4 +180,7 @@ In this chapter, you'll learn about different types of functions and how they en
 <li>02-Clock</li>
 <li>03-Counter</li>
 <li>04-Letter Counter</li>
+<li>05-Show hide text</li>
+<li>06-Simple Even and odd checker</li>
+<li>07-Number Doubler</li>
 </ul>
