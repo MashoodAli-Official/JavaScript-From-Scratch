@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      padding: 10px;
+      width: 300px;
+    }
+    .strength {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .weak {
+      color: red;
+    }
+    .medium {
+      color: orange;
+    }
+    .strong {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Password Strength Checker</h1>
+  <input type="password" id="passwordInput" placeholder="Enter your password">
+  <div class="strength" id="strengthResult">Strength: </div>
+
+  <script>
+    document.getElementById('passwordInput').addEventListener('input', function () {
+      const password = this.value;
+      const strengthResult = document.getElementById('strengthResult');
+      const strength = checkPasswordStrength(password);
+
+      strengthResult.innerText = `Strength: ${strength.message}`;
+      strengthResult.className = `strength ${strength.class}`;
+    });
+
+    function checkPasswordStrength(password) {
+      let strengthScore = 0;
+
+      // Length Check
+      if (password.length >= 8) strengthScore++;
+
+      // Contains Lowercase Letters
+      if (/[a-z]/.test(password)) strengthScore++;
+
+      // Contains Uppercase Letters
+      if (/[A-Z]/.test(password)) strengthScore++;
+
+      // Contains Numbers
+      if (/\d/.test(password)) strengthScore++;
+
+      // Contains Special Characters
+      if (/[\W_]/.test(password)) strengthScore++;
+
+      // Determine Strength
+      if (strengthScore <= 2) {
+        return { message: 'Weak', class: 'weak' };
+      } else if (strengthScore === 3 || strengthScore === 4) {
+        return { message: 'Medium', class: 'medium' };
+      } else {
+        return { message: 'Strong', class: 'strong' };
+      }
+    }
+  </script>
+</body>
+</html>

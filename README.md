@@ -183,4 +183,7 @@ Immutability in JavaScript means an object's state cannot be changed after it's 
 <li>05-Show hide text</li>
 <li>06-Simple Even and odd checker</li>
 <li>07-Number Doubler</li>
+<li>08-Simple-Search</li>
+<li>09-Word-Reverse</li>
+<li>10-Password-Strength-Checker</li>
 </ul>
