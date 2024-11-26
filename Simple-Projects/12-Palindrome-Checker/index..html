@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Mirror Validator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin-top: 80px;
+      background-color: #f0f2f5;
+    }
+    input {
+      padding: 12px;
+      width: 350px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px 25px;
+      margin-left: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      margin-top: 30px;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Word Mirror Validator</h1>
+  <input type="text" id="inputText" placeholder="Type your text here...">
+  <button onclick="validateMirror()">Validate</button>
+  <div class="result" id="result"></div>
+
+  <script>
+    function validateMirror() {
+      const textInput = document.getElementById("inputText").value;
+      const outputDiv = document.getElementById("result");
+
+      // Clean the input from special characters
+      const cleanText = textInput.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+      // Create reversed version for comparison
+      const reversedText = Array.from(cleanText).reverse().join("");
+
+      // Validate the text
+      const isMirror = cleanText === reversedText;
+
+      if (cleanText) {
+        outputDiv.innerText = isMirror
+          ? `"${textInput}" reads the same forwards and backwards! ✨`
+          : `"${textInput}" is not a mirror word. 🔄`;
+        outputDiv.style.backgroundColor = isMirror ? "#e8f5e9" : "#ffebee";
+        outputDiv.style.color = isMirror ? "#2e7d32" : "#c62828";
+      } else {
+        outputDiv.innerText = "Please enter some text to validate! ⚠️";
+        outputDiv.style.backgroundColor = "#fff3e0";
+        outputDiv.style.color = "#e65100";
+      }
+    }
+  </script>
+</body>
+</html>
