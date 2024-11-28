@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+      background-color: #f5f5f5;
+    }
+    input, select, button {
+      padding: 12px;
+      margin: 8px;
+      font-size: 15px;
+      width: 320px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      margin-top: 25px;
+      font-weight: bold;
+      font-size: 17px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Restaurant Tip Calculator</h1>
+  <input type="number" id="billAmount" placeholder="Enter Bill Amount ($)" min="0" step="0.01">
+  <input type="number" id="tipPercentage" placeholder="Enter Tip % (0-100)" min="0" max="100">
+  <button onclick="calculateTip()">Calculate Tip</button>
+  <div class="result" id="result"></div>
+
+  <script>
+    function calculateTip() {
+      const billAmount = parseFloat(document.getElementById("billAmount").value);
+      const tipPercentage = parseFloat(document.getElementById("tipPercentage").value);
+      const result = document.getElementById("result");
+
+      // Enhanced Validation
+      if (isNaN(billAmount) || billAmount <= 0) {
+        result.innerText = "Error: Please enter a valid bill amount greater than $0";
+        result.style.color = "#d32f2f";
+        return;
+      }
+      if (isNaN(tipPercentage) || tipPercentage < 0 || tipPercentage > 100) {
+        result.innerText = "Error: Tip percentage must be between 0 and 100";
+        result.style.color = "#d32f2f";
+        return;
+      }
+
+      // Calculate Tip and Total Amount
+      const tipAmount = (billAmount * tipPercentage) / 100;
+      const totalAmount = billAmount + tipAmount;
+
+      // Display Results with Currency Formatting
+      result.innerHTML = `
+        <p><strong>Bill Amount:</strong> $${billAmount.toFixed(2)}</p>
+        <p><strong>Tip (${tipPercentage}%):</strong> $${tipAmount.toFixed(2)}</p>
+        <p><strong>Total to Pay:</strong> $${totalAmount.toFixed(2)}</p>
+      `;
+      result.style.color = "#2e7d32";
+    }
+  </script>
+</body>
+</html>
